@@ -8,7 +8,7 @@ object Main {
 
     if (2 >= n) (List(), list)
     else if (list.length < n) (list, List())
-    else (makeSplitList(0, 0 to n - 2, List()), makeSplitList(n - 1, n - 1 until list.length, List()))
+    else (makeSplitList(0, 0 until n, List()), makeSplitList(n, n until list.length, List()))
 
   }
 
